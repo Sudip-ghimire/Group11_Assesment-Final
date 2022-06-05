@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Booking Form</title>
+  </head>
+  <body>
+    <form action="#" method="post" novalidate>
+      {% csrf_token %}
+      <table>
+        {{ myform.as_table }}
+      </table>
+      <input type="submit" value="Edit Booking">
+    </form>
+    
+  </body>
+</html>

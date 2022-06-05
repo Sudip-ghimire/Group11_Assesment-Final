@@ -1,0 +1,41 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <img src="{% static 'images\log.png' %}">
+<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<main class="wrapper">
+  <nav>
+    <a href="{% url 'Home' %}">Home</a>
+   
+    <a href="{% url 'link_3' %}">Book Flights</a>
+    <a href="{% url 'contact_us' %}">Contact us</a>
+    <a href="{% url 'FAQ' %}">FAQ</a>
+  </nav>
+{% block header %}<H1>Error Info not found</H1>{% endblock %}
+
+
+{% block main_body %} 
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+{% block footer %}
+<footer class="footer">
+</footer>
+{% endblock %}
+</main>
+</body>
+</html>

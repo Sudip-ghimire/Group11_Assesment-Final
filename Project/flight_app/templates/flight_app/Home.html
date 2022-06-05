@@ -1,0 +1,50 @@
+{% extends "flight_app/index.html" %}
+{% load static %}
+
+
+
+
+{% block title %} Flights | Home {% endblock %}
+
+{% block header %}
+
+
+<h1>Group Info</h1>
+{% endblock %}
+
+
+{% block main_body %}
+
+<p>
+  <table >
+    <col style="width:40%">
+    <col style="width:30%">
+    <tbody>
+      <tr>
+        <td><strong>Name </strong></td>
+        <td><strong>Student ID </strong></td>
+      </tr>
+      <tr>
+        <td>Nghia Dang</td>
+        <td>S312864</td>
+      </tr>
+      <tr>
+        <td>Dharma Dumbre</td>
+        <td>S348374</td>
+      </tr>
+      <tr>
+        <td>Farhan Shukil</td>
+        <td>S340436</td>
+      </tr>
+      <tr>
+        <td>Zavira Banoo</td>
+        <td>S320870</td>
+      </tr>
+
+    </tbody>
+  </table>
+</p>
+
+<a href="{% url 'link_3' %}">Booking form with CRUD</a>
+
+{% endblock %}

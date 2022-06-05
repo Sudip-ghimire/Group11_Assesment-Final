@@ -1,0 +1,40 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Publisher Form</title>
+  </head>
+  <body>
+
+    <main class="wrapper">
+      <nav>
+        <a href="{% url 'Home' %}">Home</a>
+       
+        <a href="{% url 'link_3' %}">link 3</a>
+        <a href="{% url 'contact_us' %}">Contact us</a>
+        <a href="{% url 'FAQ' %}">FAQ</a>
+      </nav>
+
+
+    <h1> Booking Form</h1>
+    <form action="/add/booking/done/" method="post" novalidate>
+      {% csrf_token %}
+      <table>
+        {{ example_form.my_date_field}}
+        {{ myform.as_table }}
+        
+      </table>
+        
+      <input type="submit" value=" Book Now">
+    </form>
+
+    <a href="{% url 'edit2' %}">Edit Booking id number1 from db</a>
+    <br>
+    <a href="{% url 'del' %}">Delete Booking id number1 from db</a>
+    
+   
+  </body>
+</html>

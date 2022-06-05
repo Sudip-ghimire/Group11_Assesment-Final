@@ -1,0 +1,48 @@
+{% extends "flight_app/index.html" %}
+{% load static %}
+
+
+<html>
+{% block title %}Flights | FAQ{% endblock %}
+
+{% block header %} <h1>Group Info</h1>{% endblock %}
+
+
+{% block main_body %}
+
+<p >
+  <table style="padding-left:16px">
+  <tr>
+    <td>Q: My Bag was not on the convayer I think i may be lost how do i find it?</td>
+  </tr>
+  <tr>
+    <td>A: We suggest asking an available staff memeber for help or <a href="{% url 'contact_us' %}">Contact Us</a></td>
+  </tr>
+ </table>
+</p>
+
+<p>
+  <table style="padding-left:16px">
+  <tr>
+    <td>Q: what time should i arrive for my flight?</td>
+  </tr>
+  <tr>
+    <td>A: we suggest for internaional flight to arrive 2 hours before the flight and for domestic flights to arrive 1 hour before the flight. This allows ample time to check in</td>
+  </tr>
+ </table>
+</p>
+
+<p>
+  <table style="padding-left:16px">
+  <tr>
+    <td>Q: I Require parking for my vehicle while i travel is that posible</td>
+  </tr>
+  <tr>
+    <td>A: We do have paid parking available for more information we suggest to contact Airport Paid Parking   (<a href="tel:0846378273">0846378273</a>) Email:<a href="mailto:transite@live.com"> transite@live.com </a></a>
+  </tr>
+ </table>
+</p>
+
+
+{% endblock %}
+</html>

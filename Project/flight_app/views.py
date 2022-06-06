@@ -30,6 +30,7 @@ def FAQ (request):
 
 
 
+
 # Create your views here.
 def add_booking(request):
 
